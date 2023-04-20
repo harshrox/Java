@@ -277,7 +277,7 @@
 
 
 
-    // Exceptions-
+    // Exceptions
          The following are some of the different types of exceptions in Java:
 
             1) Checked Exceptions: These are the exceptions that are checked at compile-time. They are checked to ensure that the
