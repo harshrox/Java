@@ -294,6 +294,10 @@
             its subclasses. Custom exceptions are useful when a program needs to handle specific types of exceptions that are not covered
             by the built-in exceptions.
 
+    // Singleton Pattern
+        The Singleton pattern is a design pattern in Java that restricts the instantiation of a class to one object. This means that
+        only one instance of a class can exist at a time, and that instance can be accessed globally throughout the program.
+
 
 
 
