@@ -20,7 +20,7 @@ package com.gamingz.Challenge.one;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hey Harsh!");
+        System.out.println("Hey Harsh!"); // Greeting
 
     }
 }
