@@ -32,7 +32,7 @@ public class Database {
     }
 
     // -------------unrelated concept--------------------
-
+    
     @Override
     public String toString() {                    // intially toString() method would return address of Database class
         String text = "Database class\n"+"Name: "+this.name;

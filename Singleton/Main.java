@@ -23,6 +23,7 @@ public class Main {
         System.out.println(database2.getName()); // Prints Harsh instead of Rahul
 
         // ------------unrelated concept--------------------------
+
         System.out.println(database.toString()); // prints info about Database class
     }
 
