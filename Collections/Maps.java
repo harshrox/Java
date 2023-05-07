@@ -15,8 +15,9 @@ public class Maps {
 
         contacts.remove("Ayan");
 
-        contacts.replace("Aryan",813223,788721);
+        contacts.replace("Aryan",813223,788721);  // replaces after matching the old value
+        contacts.replace("Harsh",553);  // does not check the old value
 
-        System.out.println(contacts.get("Aryan"));
+        System.out.println(contacts.get("Harsh"));
     }
 }

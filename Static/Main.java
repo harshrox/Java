@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Company.companyName="Amazon";
+
+        //Company.companyName="Amazon";
+        Company.setCompanyName("Amazon"); /* hides the implementation detail . If the implementation of setting
+                                           the field value changes in the future, there is no need to modify
+                                           any other code that uses the setter method. */
 
         Company alexa = new Company("Akshay",25);
         Company prime = new Company("Ajay",27);
@@ -33,7 +37,7 @@ public class Main {
             System.out.println("Age: "+temp.getAge());
         }
         else{
-            System.out.println("Invalid Output");
+            System.out.println("Invalid input");
         }
     }
 }

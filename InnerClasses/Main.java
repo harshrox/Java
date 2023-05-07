@@ -1,4 +1,4 @@
-package com.gamingz.Start;
+package com.gamingz.InnerClasses;
 
 class OuterClass {
     private int x;
@@ -18,12 +18,12 @@ class OuterClass {
         }
     }
 }
-public class Test1 {
+public class Main {
 
     public static void main(String[] args) {
         OuterClass outer = new OuterClass();
         OuterClass.InnerClass inner = outer.new InnerClass();
-        outer.setX(50);
+        outer.setX(100);
         inner.printX();
 
     }

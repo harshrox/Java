@@ -2,7 +2,7 @@ package com.gamingz.Start;
 
 class Printer{
 
-    <T> void printArray(T[] arr){
+    public <T> void printArray(T[] arr){
         for(T element : arr){
             System.out.println(element);
         }
