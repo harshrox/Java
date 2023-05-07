@@ -12,16 +12,19 @@ public class ArrayList0 {
 
 
         names.remove("Harsh");
+        System.out.println(names.indexOf("Hritik"));
+
 
         names.add(0,"Akshay");
 
         names.set(1,"Harsh");
-
+        names.add(1,"John");
 
 
         System.out.println(names.get(0));
         System.out.println(names.get(1));
         System.out.println(names.get(2));
+        System.out.println(names.get(3));
 
         System.out.println(names.size());
 

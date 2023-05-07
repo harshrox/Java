@@ -23,18 +23,18 @@
         int ran = random.nextInt(20) + 10;
         System.out.println(ran);
 
-        // Loops in java are same as C.
+        // Loops in java are same as in C.
 
         // Simple Arrays
         String[] students = new String[5];
 
-        String[] employees = {"Harsh","Ayush","Aryan"};
+        String[] employees = {"Harsh","Ayush","Swati"};
 
         int[] numbers = new int[10];
 
         int[] digits = {1,2,8,5,4};
 
-        array.length -> to check array lenth;
+        array.length -> to check array length;
 
             == should not be used to equate two strings
         {
@@ -124,7 +124,8 @@
 
 // Encapsulation--
 
- Encapsulation refers to the practice of hiding the implementation details of a class and only exposing a public interface to interact with it.
+ Encapsulation refers to the practice of hiding the implementation details of a class and only exposing a public
+ interface to interact with it.
  This means that the class data and behavior are protected from external access and modification.
  Encapsulation can be accessed by access modifiers.
 
@@ -148,6 +149,7 @@
  If we want to access any private field/property from outside the class , we can do that by using the
  method(getter and setter)
 
+ this.name = name;
  "this.name" refers to the "name" variable of the current object instance, and "name" refers to the parameter passed
   to the method.
 
@@ -156,7 +158,7 @@
 
  To print the address of a class use System.out.println(this)
 
-We need Getter and Setter for encapsulation.
+
 
 // Difference between System.out.println(this.name); and System.out.println(this.getName());
     System.out.println(this.name) will print the value of the instance variable name directly. This assumes that the
@@ -209,8 +211,10 @@ public class UsingPhone {
 
 
 //Constructor--
- A constructor is a special method that is used to initialize objects of a class. It is a method that has the same name as the class and does not have a return type.
-When an object of a class is created using the "new" keyword, the constructor is called automatically and initializes the object with initial values or values passed as arguments to the constructor.
+ A constructor is a special method that is used to initialize objects of a class. It is a method that has the same name
+ as the class and does not have a return type. When an object of a class is created using the "new" keyword, the
+ constructor is called automatically and initializes the object with initial values or values passed as arguments to
+ the constructor.
  Constructors can be overloaded, which means that there can be multiple constructors with different parameters.
 
 Example--
@@ -334,21 +338,44 @@ Example-
 
     The two methods are same i.e eat but they are taking different arguments inside the method.
 
+Polymorphism in Java refers to the ability of objects to take on different forms. Here are some examples of polymorphism in Java:
+
+    Method overloading: This is a form of polymorphism that allows a class to have multiple methods with the same name
+    but different parameters. For example, you might have a class with two methods named "calculateArea" - one that takes
+    the radius of a circle as a parameter, and another that takes the length and width of a rectangle as parameters.
+
+    Method overriding: This is another form of polymorphism that allows a subclass to provide its own implementation of a
+    method that is already defined in its superclass. For example, you might have a superclass called "Animal" with a
+    method called "makeSound", and a subclass called "Dog" that overrides the "makeSound" method to bark instead of
+    making a generic animal sound.
+
+    Interface implementation: Interfaces in Java define a set of methods that a class must implement. This allows for
+    polymorphism because different classes can implement the same interface, but provide their own unique implementation
+     of the interface methods.
+
+    Generics: Generics in Java allow for polymorphic behavior in collections. For example, you might have a List interface
+    that can hold a collection of any type of object, and then create instances of the List interface that hold specific
+    types of objects (e.g. List<String> or List<Integer>)
+
     // A random note--
-    In most cases, you will need both a constructor and getter/setter methods in your class to properly manage the state of your objects.
-    The constructor sets the initial values of the object's state, while the getter/setter methods allow you to access and modify the object's state as needed.
+    In most cases, you will need both a constructor and getter/setter methods in your class to properly manage the state of your
+    objects.
+    The constructor sets the initial values of the object's state, while the getter/setter methods allow you to access and
+    modify the object's state as needed.
 
     // clicking on a keyword or method and pressing ctrl+Q gives a brief about that keyword or method.
     // or press ctrl key and hover over the keyword or method to get a brief about that.
 
 
+
 // Composition--
  Composition refers to the concept of creating a class by combining objects of other classes as instance variables.
+ It means one class can be used as a field in another class.
  This allows you to reuse existing code and build more complex and specialized classes by assembling smaller, reusable objects.
 Example-- in OOP3 package
 
 // null keyword -> to postpone the instantiation of an object
-Example-> Instead of Car mercedes = new Car()
+Example-> Instead of Car mercedes = new Car();
                     Car mercedes = null; // postponing the instantiation
 
 // final keyword -> to fix the value
@@ -395,7 +422,8 @@ Example-> final Engine engine = new Engine("Renault",8000);
 
     Case 2->
         float num=1234.57f;
-        System.out.printf("%8.1d\n", num); // Output->__1234.5
+        System.out.printf("%8.1f\n", num); // Output->__1234.5
+        System.out.printf("%05f\n", num); // Output->1234.570000
 
         8 - This is the minimum width of the field in which the output will be printed.
             It specifies the total number of characters to be used for printing the output,
@@ -417,16 +445,16 @@ Example-> final Engine engine = new Engine("Renault",8000);
     Case 4->
         String s = "hello";
         String padded = String.format("%15s hii", s); // Right Justified String
-        System.out.println(padded);
+        System.out.println(padded);  // Output->          hello hi
 
-        To get width of 15 on left side.
+        To get width of 15 on left side including "hello".(Note hello has 5 characters so padding will be of 10 spaces)
 
     Case 5->
         String s = "hello";
         String padded = String.format("%-15s hii", s); // Left justified String
-        System.out.println(padded);
+        System.out.println(padded); // Output->hello          hi
 
-        To get width of 15 on right side.
+        To get width of 15 on right side including "hello".(Note hello has 5 characters so padding will be of 10 spaces).
 
 */
 

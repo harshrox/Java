@@ -83,17 +83,33 @@
         more flexible, reusable, and type-safe.
 
         Example->
-            class Box<T> {
-                private T contents;
+            class Var<T>{
+                private T any;
 
-                public void setContents(T contents) {
-                    this.contents = contents;
+                public T getAny() {  //getter
+                    return any;
                 }
 
-                public T getContents() {
-                    return contents;
+                public void setAny(T any) {  //setter
+                    this.any = any;
+                }
+
+                public Var(T any) {   // constructor
+                    this.any = any;
                 }
             }
+
+            public class Test {
+                public static void main(String[] args) {
+                    Var num = new Var(5);
+                    Var string = new Var("Harsh");
+
+                    System.out.println(num.getAny());
+                    System.out.println(string.getAny());
+                }
+
+            }
+
 
             Here, T is used to denote a class or interface which maybe Integer or String.
             The letter T is commonly used as a placeholder to represent a
@@ -103,16 +119,32 @@
             for example Integer, String and not int.
 
         Example->
-            class Printer
-                {
+            class Printer{
 
-                    <T> void printArray(T[] arr){
-                        for(T element : arr){
-                            System.out.println(element);
-                        }
-
+                <T> void printArray(T[] arr){
+                    for(T element : arr){
+                        System.out.println(element);
                     }
+
                 }
+            }
+            public class Test {
+
+                public static void main(String[] args) {
+
+                    Printer print = new Printer();
+                    Integer[] arr = {2,3,1};
+                    print.printArray(arr);
+
+                    String[] str = {"hello","harsh"};
+                    print.printArray(str);
+
+
+
+
+
+                }
+            }
 
             Here, T element : arr means all the elements of T Class in array 'arr'.
 

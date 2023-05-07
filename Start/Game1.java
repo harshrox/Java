@@ -13,7 +13,7 @@ public class Game1 {
         Scanner scan = new Scanner(System.in);
         String name = scan.next();
         System.out.println("");
-        System.out.println("Hello "+name+" , lets start the game");
+        System.out.println("Hello "+name.substring(0,1).toUpperCase()+name.substring(1)+" , lets start the game");
         System.out.println("");
         System.out.println("Press 'y' to continue the game or 'n' to close the game-");
         String choice = scan.next();
@@ -42,12 +42,12 @@ public class Game1 {
 
             }
             if (flag==0){
-                System.out.println("Sorry "+name+"!! you lost the game");
+                System.out.println("Sorry "+name.substring(0,1).toUpperCase()+name.substring(1)+"!! you lost the game");
                 System.out.println("The number was "+ran);
             }
         }
         else {
-            System.out.println("Goodbye "+name);
+            System.out.println("Goodbye "+name.substring(0,1).toUpperCase()+name.substring(1));
         }
     }
 }
