@@ -10,7 +10,8 @@ public class Main {
                     System.out.println("Printing "+i+" in a worker thread");
                     try {                               // To tackle exceptions
                         Thread.sleep(1000);
-                    } catch (InterruptedException e) {
+                    }
+                    catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
                 }
@@ -24,7 +25,8 @@ public class Main {
             System.out.println("Printing "+i+" in main thread");
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException e) {
+            }
+            catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }

@@ -249,12 +249,15 @@
 
                 // Multiple interfaces can be implemented at the declaration of class by using a comma.
                 public class MyClass implements MyInterface {
+
+                    @Override
                     public void doSomething() {
                         // implementation code here
                     }
                     // use ctrl+i to implement the abstract method
                     // or
                     // use ctrl+o to override/implement the methods
+                    @Override
                     public int doSomethingElse(String str) {
                         // implementation code here
                         return 0;

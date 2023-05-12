@@ -2,7 +2,9 @@ package com.gamingz.Interface;
 
 public class Main {
     public static void main(String[] args) {
-        CarInterface carInterface = new ElectricCar("Tesla"); // Assigning a class to the interface (we can do this because ElectricCar class has already implemented the CarInterface interface)
+        CarInterface carInterface = new ElectricCar("Tesla"); /* Assigning a class to the interface
+                                                                     (we can do this because ElectricCar class has
+                                                                    already implemented the CarInterface interface) */
         carInterface.start();
         carInterface.move(80);
 

@@ -24,7 +24,7 @@ public class Main {
         // null pointer exception
         String name = null;
         try {
-            name.equals("Harsh");
+            System.out.println(name.equals("Harsh"));
         }
         catch (NullPointerException e){
             e.printStackTrace();     // to get the details of exception
