@@ -46,6 +46,9 @@ public class Messages extends Contacts {
     }
     public void Send(String name,String text){
 
+        if(message.containsKey(name)){
+            text=text+"\n"+message.get(name);
+        }
 
         message.put(name,text);
         System.out.println("Message sent to "+name+".");
