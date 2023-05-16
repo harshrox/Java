@@ -1,4 +1,4 @@
-package com.gamingz.Challenge.one;
+package com.gamingz.Challenge;
 
 import java.util.Map;
 import java.util.HashMap;
