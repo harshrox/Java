@@ -3,6 +3,7 @@
         int var=9;
         double num=9.2;
         float num2=(float)8.3;
+        float num2=9.423f;
 
         for(int i=0;i<10;i++){
             System.out.println("Hello World "+var+num+num2+i);
@@ -20,15 +21,15 @@
 
         // Random Number
         Random random = new Random();
-        int ran = random.nextInt(20) + 10;
+        int ran = random.nextInt(20) + 10;     // 10 to 29
         System.out.println(ran);
 
-        // Loops in java are same as in C.
+        // Loops in java are same as in C.(even do while)
 
         // Simple Arrays
         String[] students = new String[5];
 
-        String[] employees = {"Harsh","Ayush","Swati"};
+        String[] employees = {"Harsh","Ayush","Ajay"};
 
         int[] numbers = new int[10];
 
@@ -84,6 +85,10 @@
          as needed.
 
         String name is same as public String name.
+
+
+        A single java file can have only one public class . If you want to create multiple public classes , consider
+        creating separate java files for each of those public classes.
 
         // Example--
 
@@ -286,7 +291,7 @@ Better example in OOP2 package.
 @override is used to overwrite the method of parent class in child class.
 
 // A random note--
-    When a method in a subclass overrides a method in superclass, it is still possible to call the overridden
+    When a method in a subclass overrides a method in superclass, it is still possible to call the original
     method using super keyword.
     If you write super.func() to call the function func(), it will call the method that was defined in the superclass.
 
@@ -308,7 +313,7 @@ Example-
     public class Main {
        public static void main(String[] args) {
           Animal myAnimal = new Animal();
-          Animal myDog = new Dog();
+          Dog myDog = new Dog();
 
           myAnimal.makeSound(); // prints "The animal makes a sound"
           myDog.makeSound();    // prints "The dog barks"

@@ -11,6 +11,7 @@ public class Maps {
         contacts.put("Aryan",813223);
         contacts.put("Ayan",823222);
 
+
         System.out.println(contacts.get("Aryan"));
 
         contacts.remove("Ayan");

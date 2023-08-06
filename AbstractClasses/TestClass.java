@@ -5,6 +5,9 @@ public class TestClass extends AbstractClass {
     public void printName(String name) {
         System.out.println("Name: " + name);
     }
+    public void printHey(int age) {
+        System.out.println("Age: " + age);
+    }
 
     // ??
     public TestClass(String branch) {

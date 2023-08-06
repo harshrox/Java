@@ -2,7 +2,7 @@ package com.gamingz.Challenge;
 
 import java.util.Scanner;
 
-/*1
+/*
     * Simulate your phone's contacts and messages application
     *
     * Greet the user

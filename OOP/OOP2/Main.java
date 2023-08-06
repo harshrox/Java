@@ -11,6 +11,7 @@ public class Main {
         eagle.fly();
 
         eagle.eat("meat"); //eating +chewing
+        bulldog.eat("food");
 
 
     }

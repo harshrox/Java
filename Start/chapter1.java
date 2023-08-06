@@ -35,7 +35,7 @@
         boolean: A boolean represents a logical value, either true or false.
                Example: boolean b = true;
 
-    Reference Data Types:
+    Reference Data Types / Object Data Types:
         String: A String is a sequence of characters.
                 Example: String s = "Hello World";
 
@@ -139,9 +139,25 @@
                     String[] str = {"hello","harsh"};
                     print.printArray(str);
 
+        Example->
+            class Printer{
 
+                <T> T printArray(T[] arr){
+                    for(T element : arr){
+                        System.out.println(element);
+                    }
+                    return arr[0];
 
+                }
+            }
+            public class Test {
 
+                public static void main(String[] args) {
+
+                    Printer print = new Printer();
+                    Integer[] arr = {2,3,1};
+                    Integer number = print.printArray(arr);
+                    System.out.println("Returned number- "+number);
 
                 }
             }
@@ -269,6 +285,12 @@
             i) Abstract classes are not implemented rather they are extended.
             ii) A class cannot extend multiple Abstract class at the same time.
             iii) Abstract classes may have non-abstract fields and non-abstract methods unlike interfaces.
+
+       while assigning the object of TestClass to the object of AbstractClass, then we can only use the methods
+       of the AbstractClass on that object (methods of TestClass can't be used on the object).
+        For Example - AbstractClass abstractClass = new TestClass("CSE");
+                      here you cannot use any methods of class TestClass on the object abstractclass, only methods of
+                      AbstractClass can be used.
 
     //  Concurrency -> Execution of multiple programs at the same time.
         // Thread

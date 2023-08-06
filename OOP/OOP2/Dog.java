@@ -7,6 +7,11 @@ public class Dog extends Animals{
 
     }
 
+    @Override
+    public void eat(String food) {
+        super.eat(food);
+    }
+
     public boolean isHasFur() {
         return hasFur;
     }

@@ -4,6 +4,7 @@ public class Bird extends Animals {
 
     public Bird(String name, String color, int legs, boolean hasTail) {
         super(name, color, legs, hasTail);
+
     }
 
     public void fly(){

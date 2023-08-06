@@ -5,5 +5,8 @@ public class Main {
         AbstractClass abstractClass = new TestClass("CSE");
         abstractClass.printName("Harsh");
         abstractClass.printBranch();
+
+        TestClass testClass = new TestClass("ECE");
+        testClass.printHey(4);
     }
 }

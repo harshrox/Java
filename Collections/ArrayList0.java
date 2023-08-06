@@ -9,15 +9,12 @@ public class ArrayList0 {
         names.add("Hritik");
         names.add("Ajay");
 
-
-
         names.remove("Harsh");
         System.out.println(names.indexOf("Hritik"));
 
-
         names.add(0,"Akshay");
 
-        names.set(1,"Harsh");
+        names.set(1,"Harsh");  // Replaces the previous value
         names.add(1,"John");
 
 
